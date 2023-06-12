@@ -118,13 +118,13 @@ export default class Educational extends Component {
                     return(
                         <div key={edu.id} onClick={() => this.handleRemove(edu.id)}> 
                             <div>
-                                <p className="education-date">{edu.date}</p>
-                                <p className="education-degree">{edu.degree}</p>
+                                <p className="edu-date">{edu.date}</p>
+                                <p className="edu-degree">{edu.degree}</p>
                             </div>
                             <div>
-                                <p className="education-school">{edu.school}</p>
-                                <p className="education-location">{edu.location}</p>
-                                <p className="education-grade">{edu.grade}</p>
+                                <p className="edu-school">{edu.school}</p>
+                                <p className="edu-location">{edu.location}</p>
+                                <p className="edu-grade">{edu.grade}</p>
                             </div>
                         </div>
                     )
