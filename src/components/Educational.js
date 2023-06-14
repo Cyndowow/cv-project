@@ -124,7 +124,7 @@ export default class Educational extends Component {
                             <div>
                                 <p className="edu-school">{edu.school}</p>
                                 <p className="edu-location">{edu.location}</p>
-                                <p className="edu-grade">{edu.grade}</p>
+                                <p className="edu-grade">Grade: {edu.grade}</p>
                             </div>
                         </div>
                     )

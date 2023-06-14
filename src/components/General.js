@@ -5,7 +5,7 @@ class General extends Component {
         super()
     
         this.state = {
-            photo: "https://animalcrossingwiki.de/_media/nachbarn/dietmar/dietmar_nh.png?w=300&h=300&tok=77a220",
+            photo: "https://static.wikia.nocookie.net/animalcrossing/images/6/6c/Clay_NH.png",
             name: "",
             date: "",
             email: "",
@@ -86,7 +86,7 @@ class General extends Component {
         }
         return(
             <div id="info">
-                <div className="header">Resume</div>
+                <h2 className="header">Resume</h2>
                 <div 
                     id="photo"
                     style={portrait}

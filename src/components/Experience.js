@@ -152,7 +152,7 @@ export default class Experience extends Component {
                         </input>
                         <label htmlFor="startDate">Starting Date</label>
                         <input
-                            type="text"
+                            type="date"
                             value={startDate}
                             id="startDate"
                             onChange={this.handleStartdateChange}
@@ -160,7 +160,7 @@ export default class Experience extends Component {
                         </input>
                         <label htmlFor="endDate">endDate</label>
                         <input
-                            type="text"
+                            type="date"
                             value={endDate}
                             id="endDate"
                             onChange={this.handleEndDateChange}
