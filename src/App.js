@@ -12,7 +12,12 @@ function App() {
   const [cv, setCv] = useState(EmptyCV);
 
   const handleChangeGeneral = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type } = e.target;
+
+    if(type === "file") {
+      handleChangeFile(e)
+      return
+    }
 
     setCv((prevState) => ({
       ...prevState,
@@ -21,6 +26,24 @@ function App() {
         [name]: value,
       }
     }))
+  }
+
+  const handleChangeFile = (e) => {
+    const {name} = e.target;
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      setCv((prevState) => ({
+        ...prevState,
+        personalInfo: {
+          ...prevState.personalInfo,
+          [name]: reader.result,
+        }
+      }))
+    }
+    reader.readAsDataURL(file);
   }
 
   const handleChangeExperience = (e, id) => {
