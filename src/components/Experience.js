@@ -15,7 +15,7 @@ const Experience = ({experience, onChange, onAdd, onDelete}) => {
     ));
 
     return(
-        <Section title="Experience" direction="column">
+        <Section title="Experience" >
             {experienceItems}
             <Button text="Add" onClick={onAdd}></Button>
         </Section>

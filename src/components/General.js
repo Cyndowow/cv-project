@@ -2,10 +2,11 @@ import React from "react";
 import Section from "./Utils/Section";
 import Input from "./Utils/Input";
 import TextArea from "./Utils/TextArea";
+import FileInput from "./Utils/FileInput";
 
 const General = ({personalInfo, onChange}) => {
     return(
-        <Section title="Personal Information" direction="column">
+        <Section title="Personal Information" >
             <Input 
                 onChange={(e) => onChange(e)}
                 type="text"
@@ -27,7 +28,7 @@ const General = ({personalInfo, onChange}) => {
                 placeholer="Title"
                 value={personalInfo.title}
             />
-            <Input 
+            <FileInput 
                 onChange={(e) => onChange(e)}
                 name="photo"
                 label="Photo"

@@ -17,10 +17,10 @@ const Content = ({ personalInfo, experience, education }) => {
             <Section title="Description">
                 <div className="description">{personalInfo.description}</div>
             </Section>
-            <Section title="Experience" direction="column">
+            <Section title="Experience">
                 {experienceItems}
             </Section>
-            <Section title="Education" direction="column">
+            <Section title="Education">
                 {educationItems}
             </Section>
         </div>
