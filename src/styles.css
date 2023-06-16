@@ -41,6 +41,10 @@ input {
     padding: 1rem;
     border-radius: 5px;
     font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 
@@ -69,6 +73,9 @@ input {
 
     &:active {
         border: 1px solid black;
+    }
+    &:hover {
+        cursor: pointer;
     }
 }
 
@@ -141,7 +148,9 @@ input {
     padding: 2rem;
 }
 
-.photo {
+img {
     margin-bottom: 2rem;
+    display: block;
+    width: 100%;
 }
 
