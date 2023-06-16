@@ -8,7 +8,7 @@ const Section = ({
     return(
         <div className="section">
             <h3 className="title">{title}</h3>
-            <div className="children">{children}</div>
+            <div className="children" direction={direction}>{children}</div>
         </div>
     )
 }
